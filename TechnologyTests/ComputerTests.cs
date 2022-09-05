@@ -8,6 +8,16 @@ namespace TechnologyTests;
 public class ComputerTests
 {
     [TestMethod]
+    public void TestInheritsId()
+    {
+        Computer testingComputer = new Computer(2, 3, true);
+        Assert.AreEqual(1, testingComputer.Id);
+
+        Computer testingComputer2 = new Computer(4, 6, true);
+        Assert.AreEqual(2, testingComputer2.Id);
+    }
+
+    [TestMethod]
     public void TestAddRam()
     {
         Computer testComputer = new Computer(16, 128, true);

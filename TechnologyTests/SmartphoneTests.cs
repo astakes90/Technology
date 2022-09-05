@@ -8,6 +8,13 @@ namespace TechnologyTests
     public class SmartphoneTests
     {
         [TestMethod]
+        public void TestInheritingBaseConstructor()
+        {
+            Smartphone testingSmartphone = new Smartphone(2, 3, true, 800);
+            Assert.IsNotNull(testingSmartphone.Id);
+        }
+
+        [TestMethod]
         public void TestSetsNumOfSelfiesCorrectly()
         {
             Smartphone testSmartphone = new Smartphone(16, 128, true, 14);
